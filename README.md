@@ -21,7 +21,7 @@
 | 直接获胜 | 直接获取当前游戏的胜利 | 模块基址 + 指针链写入 |
 | 数值修改 | 修改当前分数和移牌数，并同步界面文本 | 指针链写入 + 窗口消息 |
 
-控制窗口关闭时，项目会尽可能卸载 Hook、恢复原始字节并清理已安装的 Patch。
+控制窗口关闭时，项目会卸载 Hook、恢复原始字节并清理已安装的 Patch。
 
 ## 环境要求
 
@@ -98,7 +98,7 @@ build\bin\version.dll
 ```text
 .
 ├─ CMakeLists.txt                 # CMake 构建配置
-├─ SpiderSolitaireHack.h          # 
+├─ SpiderSolitaireHack.h          
 ├─ SpiderSolitaireHack.cpp        # Patch、Hook、指针链及功能实现
 ├─ memoryeditor.hpp               # 内存读写、特征码扫描和 Patch 管理
 ├─ safetyhook_manager.hpp         # SafetyHook 的封装

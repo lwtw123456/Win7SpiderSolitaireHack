@@ -657,6 +657,7 @@ namespace spider_solitaire
 				const std::uintptr_t cardObject =
 					ctx.rcx;
 
+				// 不是原函数
 				faceUpTarget_(
 					reinterpret_cast<void*>(cardObject),
 					true,
